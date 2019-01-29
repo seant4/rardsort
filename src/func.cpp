@@ -6,9 +6,6 @@ void gen(int * arr, int size){
     for(int i = 0; i < size; i=i+1){
         arr[i] = rand() % size;
     }
-    for(int i = 0; i < size; i=i+1){
-        std::cout << arr[i];
-    }
 }
 
 bool check(int * arr, int size){

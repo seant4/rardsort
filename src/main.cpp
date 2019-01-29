@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <algorithm>
-#include "./inc.h"
+#include "../include/include.h"
 //this gonna suck
 
 
@@ -20,15 +20,19 @@ int main(){
         gen(l, size);
         if(check(l, size) == false){
             runs++;
+	    std::cout << "Ran: " << runs << std::endl;
             for(int i = 0; i < size; i++){
                 std::cout << l[i];
                 std::cout << "\n";
             }
-            std::cout << runs <<std::endl;
             system("clear");
         }else{
             system("clear");
             std::cout << "Ran: "<< runs << " times\n";
+            for(int i = 0; i < size; i++){
+                std::cout << l[i];
+                std::cout << "\n";
+            }
             std::cout << "you lyin'";
             state = true;
         }
